@@ -1,8 +1,14 @@
-<?php namespace Stevenmaguire\Yelp;
+<?php
+
+namespace Gerfaut\Yelp\Exception;
 
 use \Exception as BaseException;
 
-class Exception extends BaseException
+/**
+ * Class ApiException
+ * @package Gerfaut\Yelp\Exception
+ */
+class ApiException extends BaseException
 {
     /**
      * Response body
@@ -16,7 +22,7 @@ class Exception extends BaseException
      *
      * @param string $body
      *
-     * @return  Stevenmaguire\Yelp\Exception
+     * @return  ApiException
      */
     public function setResponseBody($body = null)
     {
