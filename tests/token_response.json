@@ -1,0 +1,5 @@
+{
+  "access_token": "This is a secret token",
+  "expires_in": 15299325,
+  "token_type": "Bearer"
+}

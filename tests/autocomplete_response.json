@@ -1,0 +1,33 @@
+{
+  "terms": [
+    {
+      "text": "parks for kids"
+    },
+    {
+      "text": "parking garage"
+    },
+    {
+      "text": "parking lot"
+    }
+  ],
+  "businesses": [
+    {
+      "id": "4-pWX0F9mi_VlN1IAxweSQ",
+      "name": "Park Tavern"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Parking",
+      "alias": "parking"
+    },
+    {
+      "title": "Dog Parks",
+      "alias": "dog_parks"
+    },
+    {
+      "title": "Trampoline Parks",
+      "alias": "trampoline"
+    }
+  ]
+}

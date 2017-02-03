@@ -37,7 +37,5 @@
     <php>
         <env name="YELP_CONSUMER_KEY" value=""/>
         <env name="YELP_CONSUMER_SECRET" value=""/>
-        <env name="YELP_ACCESS_TOKEN" value=""/>
-        <env name="YELP_ACCESS_TOKEN_SECRET" value=""/>
     </php>
 </phpunit>
