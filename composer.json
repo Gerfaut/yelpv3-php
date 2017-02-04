@@ -1,5 +1,5 @@
 {
-    "name": "Gerfaut/yelpv3-php",
+    "name": "gerfaut/yelpv3-php",
     "description": "A php client for consuming Yelp API v3 (Fusion)",
     "homepage" : "https://github.com/Gerfaut/yelpv3-php",
     "authors" : [
