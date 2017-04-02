@@ -101,8 +101,15 @@ $responseBodyObject = json_decode($responseBody);
 
 ## Testing
 
+Using your golbal phpunit install:
+
 ``` bash
 $ phpunit
+```
+
+Or using the vendors (from the root folder):
+``` bash
+$ ./vendor/phpunit/phpunit/phpunit
 ```
 
 ## Contributing

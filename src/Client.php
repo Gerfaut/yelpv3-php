@@ -12,6 +12,10 @@ use GuzzleHttp\Exception\ClientException;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
 use GuzzleHttp\Client as HttpClient;
+use Doctrine\Common\Annotations\AnnotationRegistry;
+
+//Autoload JMS annotations
+AnnotationRegistry::registerLoader('class_exists');
 
 /**
  * Class Client

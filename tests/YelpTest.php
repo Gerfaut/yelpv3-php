@@ -11,15 +11,9 @@ use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use JMS\Serializer\SerializerBuilder;
 use Mockery as m;
 use Psr\Http\Message\ResponseInterface;
 use Gerfaut\Yelp\Client as Yelp;
-use Doctrine\Common\Annotations\AnnotationRegistry;
-
-//Needed to load JMS/Serializer annotations
-$loader = require __DIR__.'/../vendor/autoload.php';
-AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
 
 class YelpTest extends \PHPUnit_Framework_TestCase
 {
@@ -159,7 +153,7 @@ class YelpTest extends \PHPUnit_Framework_TestCase
     
     public function test_It_Can_Search_Bars_In_Chicago()
     {
-        $term = 'bars';
+        $term = 'sushi';
         $location = 'Chicago, IL';
         $attributes = ['term' => $term, 'location' => $location];
 
@@ -177,7 +171,7 @@ class YelpTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf(BusinessesResponse::class, $results);
         $this->assertNotEmpty($results->getBusinesses());
-        $this->assertEquals(1, count($results->getBusinesses()));
+        $this->assertEquals(10, count($results->getBusinesses()));
     }
 
     public function test_It_Can_Search_By_Phone()
@@ -192,7 +186,7 @@ class YelpTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf(BusinessesResponse::class, $results);
         $this->assertNotEmpty($results->getBusinesses());
-        $this->assertEquals(1, count($results->getBusinesses()));
+        $this->assertEquals(10, count($results->getBusinesses()));
     }
 
     public function test_It_Can_Set_Defaults()
@@ -221,7 +215,7 @@ class YelpTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf(BusinessesResponse::class, $results);
         $this->assertNotEmpty($results->getBusinesses());
-        $this->assertEquals(1, count($results->getBusinesses()));
+        $this->assertEquals(10, count($results->getBusinesses()));
     }
 
     public function test_It_Can_Find_Business_By_Id_With_Special_Characters()
