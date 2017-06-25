@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/github/release/gerfaut/yelpv3-php.svg?style=flat-square)](https://github.com/gerfaut/yelpv3-php/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/gerfaut/yelpv3-php/master.svg?style=flat-square&1)](https://travis-ci.org/gerfaut/yelpv3-php)
+[![Build Status](https://img.shields.io/travis/Gerfaut/yelpv3-php/master.svg?style=flat-square&1)](https://travis-ci.org/Gerfaut/yelpv3-php)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/gerfaut/yelpv3-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/gerfaut/yelpv3-php/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/gerfaut/yelpv3-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/gerfaut/yelpv3-php)
 [![Total Downloads](https://img.shields.io/packagist/dt/gerfaut/yelpv3-php.svg?style=flat-square)](https://packagist.org/packages/gerfaut/yelpv3-php)

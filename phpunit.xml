@@ -31,6 +31,7 @@
             <exclude>
                 <directory suffix=".php">./vendor</directory>
                 <directory suffix=".php">./tests</directory>
+                <directory suffix=".php">./src/Model</directory>
             </exclude>
         </whitelist>
     </filter>
