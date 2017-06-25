@@ -12,6 +12,7 @@ use GuzzleHttp\Exception\ClientException;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
 use GuzzleHttp\Client as HttpClient;
+use Doctrine\Common\Annotations\AnnotationRegistry;
 
 /**
  * Class Client
@@ -456,6 +457,9 @@ class Client
      */
     protected function request($path, $fullClassName)
     {
+        //Autoload JMS annotations
+        AnnotationRegistry::registerLoader('class_exists');
+
         if (empty($this->accessToken)) {
             $this->setAccessToken();
         }
