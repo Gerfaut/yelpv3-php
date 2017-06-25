@@ -101,7 +101,7 @@ $responseBodyObject = json_decode($responseBody);
 
 ## Testing
 
-Using your golbal phpunit install:
+Using your global phpunit install:
 
 ``` bash
 $ phpunit

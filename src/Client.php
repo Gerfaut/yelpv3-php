@@ -12,10 +12,6 @@ use GuzzleHttp\Exception\ClientException;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
 use GuzzleHttp\Client as HttpClient;
-use Doctrine\Common\Annotations\AnnotationRegistry;
-
-//Autoload JMS annotations
-AnnotationRegistry::registerLoader('class_exists');
 
 /**
  * Class Client
@@ -482,7 +478,8 @@ class Client
         try {
             return $this->serializer->deserialize($response->getBody(), $fullClassName, 'json');
         } catch (\Exception $e) {
-            throw new DeserializeException("Error in deserialization (".$response->getBody()." ----> ".$fullClassName.")", -1, $e);
+            throw new DeserializeException("Error in deserialization (".$response->getBody().
+                                                    " ----> ".$fullClassName.")", -1, $e);
         }
     }
 }
