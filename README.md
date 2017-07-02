@@ -1,4 +1,14 @@
-# Yelp PHP Client
+# DEPRECATED - Yelp PHP Client
+
+
+# DEPRECATED
+The base project of this fork is now officially supporting YELP V3 Fusion : [https://github.com/stevenmaguire/yelp-php](https://github.com/stevenmaguire/yelp-php). 
+
+Use that one instead.
+
+
+----- 
+
 
 [![Latest Version](https://img.shields.io/github/release/gerfaut/yelpv3-php.svg?style=flat-square)](https://github.com/gerfaut/yelpv3-php/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
